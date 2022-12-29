@@ -88,7 +88,7 @@ submit.addEventListener("click", (ev) => {
   ) {
     form.classList.add("form-display");
     // New Screen //
-    img.setAttribute("src", "/assets/icon-complete.svg");
+    img.setAttribute("src", "https://raw.githubusercontent.com/fabioaes/interactive-card/main/assets/icon-complete.svg");
     h2.innerText = "Thank You!";
     p.innerText = "We've added your card details";
     button.innerText = "Continue";
