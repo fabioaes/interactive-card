@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  /* PRIMARY  */
+  --linear-gradi: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --input-error: hsl(0, 100%, 66%);
+  /* NEUTRAL  */
+  --white: hsl(0, 0%, 100%);
+  --ligth-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  height: 97vh;
+}
+
+.img-bg {
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  width: 38%;
+}
+
+.main-bg {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 40%;
+}
+
+main {
+  display: flex;
+  gap: 14rem;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  height: 33rem;
+  width: 28rem;
+  color: var(--white);
+}
+
+.cards #card-one {
+  height: 15rem;
+  width: 28rem;
+}
+
+.cards .img-card {
+  position: absolute;
+  z-index: -1;
+}
+
+.cards #card-one .txt {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  height: 15rem;
+}
+
+.cards #card-one .txt img {
+  width: 5rem;
+}
+
+.cards #card-one .txt > p {
+  margin-top: 6rem;
+  font-size: 21px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 4px;
+}
+
+.cards #card-one .card-info > div {
+  display: flex;
+}
+
+.cards #card-one .card-info {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+
+.cards #card-two {
+  margin-left: 5rem;
+  width: 28rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.cards #card-two p {
+  color: var(--white);
+  font-size: 12px;
+  letter-spacing: 2px;
+  position: relative;
+  right: 3rem;
+}
+
+.border-required {
+  border: 1px solid hsl(0, 100%, 66%);
+}
+
+main form {
+  height: 33rem;
+  display: flex;
+  width: 25rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .form-display {
+  display: none;
+}
+
+main form input {
+  margin-top: 0.3rem;
+  margin-bottom: 0.1rem;
+  height: 2.5rem;
+  border-radius: 6px;
+  border: 1px solid hsl(280, 6%, 80%);
+  color: var(--very-dark-violet);
+  padding: 0rem 1rem;
+  cursor: pointer;
+}
+
+main form input::placeholder {
+  opacity: 50%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input:focus {
+  outline: 0;
+  border: 1px solid hsl(278, 94%, 30%);
+}
+
+main form p {
+  margin-bottom: 1.3rem;
+  color: var(--input-error);
+  font-size: 12px;
+}
+
+main form label {
+  text-transform: uppercase;
+  color: var(--very-dark-violet);
+  font-size: 12px;
+}
+
+main form #exp-cvc {
+  width: 100%;
+  display: flex;
+}
+
+main form .exp-date {
+  width: 60%;
+}
+
+main form #exp-cvc .cvc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10em;
+  padding-top: 0.3rem;
+}
+
+main form #exp-cvc .exp-input > input {
+  width: 4rem;
+}
+
+main form button {
+  height: 2.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--very-dark-violet);
+  color: var(--white);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+main form button:hover {
+  opacity: 85%;
+  transition: 1.3s;
+}
+
+main #content-confirm {
+  height: 33rem;
+  display: flex;
+  width: 25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  color: hsl(278, 68%, 11%);
+}
+
+main #content-confirm img {
+  width: 4rem;
+}
+
+main #content-confirm h2 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+main #content-confirm p {
+  font-weight: 400;
+  opacity: 60%;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+main #content-confirm button {
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  color: var(--white);
+  background-color: var(--very-dark-violet);
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+main #content-confirm button:hover {
+  opacity: 80%;
+  transition: 0.8s;
+}
+
+@media (max-width: 1199px) {
+  main {
+    gap: 8rem;
+  }
+
+  .cards #card-one,
+  #card-one > img,
+  #card-two,
+  #card-two > img {
+    height: 15rem;
+    width: 24rem;
+  }
+
+  .img-bg {
+    width: 28%;
+  }
+
+  .cards #card-two {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 1070px) {
+  main form #exp-cvc {
+    width: 19rem;
+  }
+
+  .img-bg {
+    width: 32%;
+  }
+
+  form {
+    width: 19rem;
+  }
+
+  form > input,
+  button {
+    width: 19rem;
+  }
+
+  main form #exp-cvc .exp-date {
+    width: 9rem;
+  }
+
+  main form #exp-cvc .cvc {
+    width: 10rem;
+  }
+
+  .cards {
+    position: relative;
+    left: 3rem;
+  }
+}
+
+@media (max-width: 915px) {
+  main {
+    gap: 4rem;
+  }
+
+  main form {
+    width: 19rem;
+  }
+
+  main .cards {
+    width: 24rem;
+    left: 1.5rem;
+  }
+
+  main .cards > #card-one {
+    position: relative;
+  }
+
+  main .cards > #card-two {
+    position: relative;
+    left: -5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 0.5rem;
+  }
+
+  main form {
+    width: 32rem;
+  }
+
+  main form input {
+    width: 100%;
+  }
+
+  main form button {
+    width: 100%;
+  }
+
+  main form #exp-cvc .exp-input {
+    width: 13rem;
+  }
+
+  main form #exp-cvc .exp-input input {
+    width: 6rem;
+  }
+
+  main form #exp-cvc .cvc {
+    left: 4rem;
+    position: relative;
+    width: 18.8rem;
+  }
+
+  main form #exp-cvc .cvc > input {
+    width: 18.8rem;
+  }
+
+  .cards #card-one,
+  #card-one > img,
+  #card-two,
+  #card-two > img {
+    width: 25rem;
+  }
+
+  main .cards {
+    width: 28rem;
+    height: 24rem;
+    left: 2rem;
+  }
+
+  .cards #card-one,
+  #card-one > img {
+    top: 4.3rem;
+    z-index: 1;
+    left: -2rem;
+  }
+
+  .cards #card-one > .txt {
+    position: relative;
+    z-index: 1;
+    top: 4.3rem;
+    left: -2rem;
+  }
+
+  .cards #card-two > p {
+    top: -4.6rem;
+    left: 1rem;
+  }
+
+  .cards #card-two {
+    top: -9rem;
+    position: relative;
+  }
+
+  #card-two > img {
+    top: -9rem;
+    z-index: -1;
+    left: 7rem;
+  }
+}
+
+@media (max-width: 569px) {
+  .cards #card-one,
+  #card-one > img,
+  #card-two,
+  #card-two > img {
+    width: 22rem;
+  }
+
+  main form {
+    width: 25rem;
+  }
+
+  main form #exp-cvc .exp-input input {
+    width: 6rem;
+  }
+
+  main form #exp-cvc .cvc input {
+    width: 12rem;
+  }
+
+  .cards #card-one > img {
+    left: 1rem;
+  }
+
+  .cards #card-one .txt > p {
+    font-size: 16px;
+  }
+
+  .cards #card-two > p {
+    left: -2rem;
+  }
+
+  .cards #card-one .txt {
+    left: 1rem;
+  }
+
+  main .cards {
+    width: 25rem;
+    height: 24rem;
+    left: 0.3rem;
+  }
+}

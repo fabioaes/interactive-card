@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <script src="/javascript/script.js" type="module" defer></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <img class="img-bg" src="/assets/bg-main-desktop.png" alt="" />
+    <main>
+      <div class="cards">
+        <div id="card-one">
+          <img
+            class="img-card card-front"
+            src="/assets/bg-card-front.png"
+            alt=""
+          />
+          <div class="txt">
+            <img src="/assets/card-logo.svg" alt="" />
+            <p class="number-card">0000 0000 0000 0000</p>
+            <div class="card-info">
+              <p class="name-card">JANE APPLESEED</p>
+              <div>
+                <p class="exp-month">09/</p>
+                <p class="exp-year">00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="card-two">
+          <img class="img-card" src="/assets/bg-card-back.png" alt="" />
+          <p>000</p>
+        </div>
+      </div>
+      <form action="#">
+        <label for="name-form">cardholder name</label>
+        <input
+          id="name-form"
+          type="text"
+          autocomplete="off"
+          required
+          maxlength="20"
+          placeholder="e.g. Jane Appleseed"
+        />
+        <p id="required-name"></p>
+        <label for="card-number">card number</label>
+        <input
+          type="tel"
+          inputmode="numeric"
+          id="card-number"
+          autocomplete="cc-number"
+          required
+          minlength="16"
+          maxlength="19"
+          placeholder="e.g. 1234 5678 9123 0000"
+        />
+        <p id="required-number"></p>
+        <div id="exp-cvc">
+          <div class="exp-date">
+            <label for="data-exp">exp. date (mm/yy)</label>
+            <div class="exp-input">
+              <input
+                id="data-exp"
+                type="tel"
+                inputmode="numeric"
+                pattern="[0-9\s]{1,2}"
+                autocomplete="cc-number"
+                minlength="2"
+                maxlength="2"
+                required
+                placeholder="MM"
+              />
+              <input
+                class="data-exp"
+                name="data-exp"
+                type="tel"
+                inputmode="numeric"
+                pattern="[0-9\s]{1,2}"
+                autocomplete="cc-number"
+                minlength="2"
+                maxlength="2"
+                required
+                placeholder="YY"
+              />
+            </div>
+            <p id="required-exp"></p>
+          </div>
+          <div class="cvc">
+            <label for="code-sec">cvc</label>
+            <input
+              id="code-sec"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{1,3}"
+              autocomplete="cc-number"
+              minlength="3"
+              maxlength="3"
+              required
+              placeholder="e.g. 123"
+            />
+            <p id="required-cod"></p>
+          </div>
+        </div>
+        <button type="submit">Confirm</button>
+      </form>
+    </main>
+
+    <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+  </body>
+</html>
