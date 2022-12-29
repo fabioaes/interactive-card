@@ -8,7 +8,7 @@
     <a href="https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a "https://fabioaes.github.io/interactive-card/">View Demo</a>
+    <a href="https://fabioaes.github.io/interactive-card/">View Demo</a>
   </p>
 </div>
 
