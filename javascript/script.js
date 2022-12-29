@@ -23,7 +23,7 @@ import {
   button,
   main,
   mainBg,
-} from "/javascript/selectorsElements.js";
+} from "https://fabioaes.github.io/interactive-card/javascript/selectorsElements.js";
 
 let txt = "";
 
@@ -101,7 +101,7 @@ submit.addEventListener("click", (ev) => {
 
 function switchImgbg(x) {
   if (x.matches) {
-    mainBg.setAttribute("src", "/assets/bg-main-mobile.png");
+    mainBg.setAttribute("src", "https://raw.githubusercontent.com/fabioaes/interactive-card/main/assets/bg-main-mobile.png");
     mainBg.classList.remove("img-bg");
     mainBg.classList.add("main-bg");
   } else {
