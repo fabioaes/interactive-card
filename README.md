@@ -5,7 +5,7 @@
   <img src="https://www.frontendmentor.io/static/images/logo-mobile.svg" alt="frontendmentor" width="80">
 
   <p align="center">
-    <a href="https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw"><strong>Frontend Mentor Challenge</strong></a>
+    <a href="https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
     <a href="https://fabioaes.github.io/interactive-card/">View Demo</a>
