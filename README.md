@@ -5,10 +5,10 @@
   <img src="https://www.frontendmentor.io/static/images/logo-mobile.svg" alt="frontendmentor" width="80">
 
   <p align="center">
-    <a href="https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ"><strong>Frontend Mentor Challenge</strong></a>
+    <a href="https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw/hub"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="https://fabioaes.github.io/multi-step-form/">View Demo</a>
+    <a href="https://fabioaes.github.io/interactive-card/">View Demo</a>
   </p>
 </div>
 
@@ -27,11 +27,8 @@
 ##
 
 
-![image](https://user-images.githubusercontent.com/101347552/212445043-45816181-f281-4f95-9578-2e03baf714bb.png)
-![image](https://user-images.githubusercontent.com/101347552/212445083-568bcea6-9a01-42f8-9ad6-93bfa30cc6c8.png)
-![image](https://user-images.githubusercontent.com/101347552/212445113-872e8f81-c272-4c31-a8a0-f64bc9a0f36c.png)
-
-
+![image](https://user-images.githubusercontent.com/101347552/212445491-5e49190e-7b06-4113-a7ee-78af6f6f4fb6.png)
+![image](https://user-images.githubusercontent.com/101347552/212445516-9a549aff-5736-489c-840d-9c50827454a0.png)
 
 
 ## Overview
@@ -50,7 +47,6 @@ Your users should be able to:
 - The card number, expiry date, or CVC fields are in the wrong format
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
-
 
 ## Author
 
