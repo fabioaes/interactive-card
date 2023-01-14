@@ -8,7 +8,7 @@
     <a href="https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="https://fabioaes.github.io/interactive-card/">View Demo</a>
+    <a href="https://fabioaes.github.io/multi-step-form/">View Demo</a>
   </p>
 </div>
 
